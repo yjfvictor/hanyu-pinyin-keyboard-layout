@@ -25,7 +25,7 @@ Pressing `AltGr` with `1`, `2`, `3`, `4` types the [dead keys](## "A dead key is
 
 
 
-**Bounus:** If you have a keyboard from Europe (i.e. ISO 105 keyboard), then the scancode `56` key is for typing the Pinyin letter `ü` directly, without combination keys at all. Apart from that, `AltGr`+`ü` is also for `ê`.
+**Bonus:** If you have a keyboard from Europe (i.e. ISO 105 keyboard), then the scancode `56` key is for typing the Pinyin letter `ü` directly, without combination keys at all. Apart from that, `AltGr`+`ü` is also for `ê`.
 
 **附加功能：** 如果你有欧洲的键盘（ISO 105键盘），那么比美式键盘多出来的56号按键可以直接打出汉语拼音字符`ü`，无需组合键。此外，`AltGr`+`ü`也可用于输入 `ê`。
 ![Hanyu Pinyin Keyboard Layout on an ISO 105 keyboard](pinyin-iso105.png "Hanyu Pinyin Keyboard Layout on an ISO 105 keyboard")
