@@ -25,6 +25,13 @@
 
 @echo off
 
+if not "%1"=="am_admin" (
+    powershell -Command "Start-Process -Verb RunAs -WorkingDirectory '%cd%' -FilePath '%0' -ArgumentList 'am_admin', '%cd%'"
+    exit /b
+)
+
+cd "%2"
+
 if "%processor_architecture%" == "AMD64" goto AMD64
 if "%processor_architecture%" == "IA64" goto IA64
 if "%processor_architecture%" == "ARM64" goto ARM64
