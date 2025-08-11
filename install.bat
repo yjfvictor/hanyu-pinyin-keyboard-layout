@@ -38,22 +38,25 @@ if "%processor_architecture%" == "ARM64" goto ARM64
 if "%processor_architecture%" == "x86" goto x86
 
 :AMD64
-copy amd64\KBDCNPY.dll C:\Windows\System32\
-copy wow64\KBDCNPY.dll C:\Windows\SysWOW64\
+copy amd64\KBDCNPY.dll "%SystemRoot%\System32\"
+copy wow64\KBDCNPY.dll "%SystemRoot%\SysWOW64\"
 goto commonexit
 
 :IA64
 echo IA64
-copy ia64\KBDCNPY.dll C:\Windows\System32\
+copy ia64\KBDCNPY.dll "%SystemRoot%\System32\"
 goto commonexit
 
 :ARM64
 echo Not supported on ARM64
-goto commonexit
+goto end
 
 :x86
-copy i386\KBDCNPY.dll C:\Windows\System32\
+copy i386\KBDCNPY.dll "%SystemRoot%\System32\"
 goto commonexit
 
 :commonexit
 regedit /s 00000804.reg
+
+:end
+
